@@ -35,7 +35,7 @@ try {
 }
 output.innerHTML += "Symbol to Boolean: " + Boolean(sym) + "<br><br>";
 
-let obj = { name: "Sai & Prem" };
+let obj = { name: "ABC" };
 output.innerHTML += "Object name: " + obj.name + "<br>";
 output.innerHTML += "Object to String: " + String(obj) + "<br>";
 output.innerHTML += "Object to Number: " + Number(obj) + "<br>";
