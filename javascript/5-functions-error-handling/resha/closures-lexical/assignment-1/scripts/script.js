@@ -25,7 +25,7 @@ function account() {
             output.innerText = `Insufficient balance`;
         }
 
-        else if (amt <= balance) {
+        else {
             balance -= amt;
             output.innerText = `Withdrawn: ${amt}`;
         }

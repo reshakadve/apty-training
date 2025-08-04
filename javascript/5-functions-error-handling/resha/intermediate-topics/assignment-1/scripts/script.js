@@ -7,7 +7,9 @@ function repeatAction(func, n) {
 function getValues() {
     const output = document.getElementById('output');
     const n = document.getElementById('n').value;
+    let result = '';
     repeatAction(function(index) {
-        output.innerText += `${n} x ${index} = ${n*index} \n`;
+        result += `${n} x ${index} = ${n*index} \n`;
     }, n);
+    output.innerText = result;
 }

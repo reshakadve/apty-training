@@ -14,12 +14,9 @@ function getValues() {
     const output = document.getElementById('output');
     const length = document.getElementById('length').value;
     const breadth = document.getElementById('breadth').value;
-    // console.log(length + ' ' + breadth);
-    // console.log(typeof length + ' ' + typeof breadth);
 
     const l = length === '' ? undefined : Number(length);
     const b = breadth === '' ? undefined : Number(breadth);
-    // console.log(l + ' ' + b);
 
     const { area, peri } = outer(l, b);
     output.innerText = `Result: ${area + ' ' + peri}`;
